@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context="com.example.android.stadiumsmapapp.profile">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:src="@drawable/me" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Change"
+        android:textColor="#FFFFFF"
+        android:background="#4052b5"/>
+    <include layout="@layout/separation_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#4052b5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Ahmed Khaled"/>
+    </LinearLayout>
+    <include layout="@layout/separation_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#4052b5"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ahmed@gmail.com"
+            android:textColor="#0d0f15"/>
+    </LinearLayout>
+    <include layout="@layout/separation_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="favourite Team"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#4052b5"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="#ffffff"
+
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:spinnerMode="dialog"
+            android:id="@+id/favTeam"
+
+            tools:listitem="@layout/textview"/>
+    </LinearLayout>
+    <include layout="@layout/separation_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#4052b5"
+            android:text="Save"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFF"
+            android:background="#4052b5"
+            android:text="Cancel"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
