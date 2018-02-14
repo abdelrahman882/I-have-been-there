@@ -25,6 +25,7 @@ import static android.R.attr.x;
 public class LogIn extends AppCompatActivity {
     CallbackManager callbackManager;
     LoginButton loginButton;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
